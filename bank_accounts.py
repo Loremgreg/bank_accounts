@@ -6,12 +6,16 @@ class Bank_account:
     def __init__(self, initial_amount, account_name):
         self.balance = initial_amount
         self.account_name = account_name
-        print(f"\nAccount '{account_name}' created. \n Balance = ${self.balance:.2f}")
+        print(f"\nAccount '{self.account_name}' created. \n Balance = ${self.balance:.2f}")
 
-    def get_balance():
-        pass
-    def deposit():
-        pass
+    def get_balance(self):
+        print(f"\nAccount '{self.account_name}' balance = ${self.balance:.2f}")
+
+    def deposit(self, amount):
+        self.balance += amount
+        print("\nDeposit Complete.")
+        self.get_balance()
+
     def viable_transaction():
         pass
     def withdraw():

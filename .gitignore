@@ -1,1 +1,5 @@
 model.py
+__pycache__/
+git rm -r --cached __pycache__/
+
+
