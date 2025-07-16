@@ -7,3 +7,6 @@ Dave.get_balance()
 Sara.get_balance()
 
 Sara.deposit(300)
+
+Dave.withdraw(8000)
+Dave.withdraw(150)
