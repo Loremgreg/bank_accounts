@@ -26,10 +26,10 @@ class Bank_account:
         try:
             self.viable_transaction(amount)
             self.balance -= amount
-            print(f"\nTransaction accepted, you have withdraw ${amount}")
+            print(f"\n✅ Transaction accepted, you have withdraw ${amount}")
             self.get_balance()
         except BalanceException as error:
-            print(f"\nWithdraw interrupted: {error}")
+            print(f"\n❌ Withdraw interrupted: {error}")
 
 
     def transfer():
