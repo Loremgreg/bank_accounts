@@ -32,5 +32,12 @@ class Bank_account:
             print(f"\n❌ Withdraw interrupted: {error}")
 
 
-    def transfer():
-        pass
+    def transfer(self, amount, account):
+        try: 
+            print('\n**********\n\nBeginning Transfer.. 🚀')
+            self.viable_transaction(amount)
+            self.withdraw(amount)
+            account.deposit(amount)
+            print('\nTransfer complete! ✅\n\n**********')
+        except BalanceException as error:
+            print(f"\n❌ Transfer interrupted: {error}")
