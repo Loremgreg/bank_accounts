@@ -44,6 +44,17 @@ class Bank_account:
 
 class InterestRewardsAcct(Bank_account):
     def deposit(self, amount):
-        self.balance =  self.balance + (amount * 1.5)
+        self.balance =  self.balance + (amount * 1.05)
         print("\nDeposit Complete ✅")
         self.get_balance()
+
+class SavingAcct(InterestRewardsAcct):
+    def deposit(self, amount):
+        pass
+
+    def fee(self, amount):
+        pass
+
+    
+
+
