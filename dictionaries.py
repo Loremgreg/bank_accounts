@@ -43,10 +43,15 @@ print(band)
 for item in band.items():
     print(item)
 
+# Delete and clear
+
+band["drums"] = "Bonham"
 del band["drums"]
 print(band)
 
-band.clear()
-print(band)
+band2.clear()
+print(band2)
+
+del band2
 
 
