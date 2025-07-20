@@ -21,3 +21,10 @@ Greg.get_balance()
 Greg.deposit(100)
 
 Greg.transfer(100, Dave)
+
+Tim = SavingAcct(1000, "Tim")
+Tim.get_balance()
+Tim.deposit(100)
+Tim.transfer(5000, Sara)
+Tim.transfer(200, Sara)
+Tim.withdraw(300)
