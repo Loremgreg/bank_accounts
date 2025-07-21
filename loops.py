@@ -62,3 +62,4 @@ attrib = ["good", "big", "again"]
 #     for name in names:
 #         for attri in attrib:
 #             print(name + " " + action + " " + attri + ".") 
+
