@@ -30,7 +30,7 @@ def exercise_3_5(guest):
         guest[0] = "Copernic"
         for g in guest:
             print(f"Hi {g}, see you tonight")
-
+        return guest
 # Exo 3-6. More Guests:
 # Tu as trouvé une grande table, ajoute trois nouveaux invités :
 # - insert() au début,
@@ -38,9 +38,15 @@ def exercise_3_5(guest):
 # - append() à la fin,
 # puis imprime les invitations mises à jour.
 
-def exercise_3_6():
-    # TODO: utilise insert() et append() pour étendre ta liste
-    pass
+def exercise_3_6(guest):
+        for g in guest:
+            print(f"Hi {g}, I found a bigger table")
+        guest.insert(0, "Jonhy")
+        middle_list = len(guest)//2
+        guest.insert(middle_list, "Clara")
+        guest.append("Popol")
+        for g in guest:
+            print(f"Hi {g}, I'll see you tonight!")
 
 # Exo 3-7. Shrinking Guest List:
 # Maintenant, tu ne peux inviter que deux personnes :
@@ -69,10 +75,10 @@ def main():
     guest_list = exercise_3_4()
 
     print("\nExercice 3-5:")
-    exercise_3_5(guest_list)
+    new_guest_list = exercise_3_5(guest_list)
 
     print("\nExercice 3-6:")
-    exercise_3_6()
+    exercise_3_6(new_guest_list)
 
     print("\nExercice 3-7:")
     exercise_3_7()
