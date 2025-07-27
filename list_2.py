@@ -47,6 +47,7 @@ def exercise_3_6(guest):
         guest.append("Popol")
         for g in guest:
             print(f"Hi {g}, I'll see you tonight!")
+        return guest
 
 # Exo 3-7. Shrinking Guest List:
 # Maintenant, tu ne peux inviter que deux personnes :
@@ -55,9 +56,16 @@ def exercise_3_6(guest):
 # - informe les deux derniers qu'ils sont toujours invités,
 # - supprime la liste et affiche-la vide.
 
-def exercise_3_7():
-    # TODO: utilise pop() et del pour ramener la liste à vide
-    pass
+def exercise_3_7(guest):
+        print("Guys, I can only invite two people for dinner.")
+        while len(guest) > 2:
+                remove = guest.pop()
+                print(f"Sorry {remove}, I can't invite you to dinner.")
+        
+        print(guest)
+        del guest[0:2]
+        print(guest)
+            
 
     
 
@@ -78,10 +86,10 @@ def main():
     new_guest_list = exercise_3_5(guest_list)
 
     print("\nExercice 3-6:")
-    exercise_3_6(new_guest_list)
+    new_guest_list = exercise_3_6(new_guest_list)
 
     print("\nExercice 3-7:")
-    exercise_3_7()
+    exercise_3_7(new_guest_list)
 
 if __name__ == "__main__":
     main()
