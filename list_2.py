@@ -66,8 +66,19 @@ def exercise_3_7(guest):
         del guest[0:2]
         print(guest)
             
-
-    
+def exercice_3_8():
+     to_visit = ["NY", "LA", "Tokyo", "St Petersbourg", "Mons"]
+     print(to_visit)
+     to_visit.sort()
+     print(to_visit)
+     to_visit.sort(reverse=True)
+     print(to_visit)
+     to_visit.reverse()
+     print(to_visit)
+     to_visit.sort(reverse=False)
+     print(to_visit)
+     to_visit.sort(reverse=False)
+     print(to_visit)
 
 def main():
     print("\nExercice Name: ")
@@ -90,6 +101,9 @@ def main():
 
     print("\nExercice 3-7:")
     exercise_3_7(new_guest_list)
+
+    print("\nExercice 3-8:")
+    exercice_3_8()
 
 if __name__ == "__main__":
     main()
